@@ -262,6 +262,17 @@ typedef enum _sai_switch_attr_extensions_t
      */
     SAI_SWITCH_ATTR_FLOW_BULK_GET_SESSION_EVENT_NOTIFY,
 
+    /**
+     * @brief OTN alarm event notification callback function passed to the adapter.
+     *
+     * Use sai_otn_alarm_event_notification_fn as notification function.
+     *
+     * @type sai_pointer_t sai_otn_alarm_event_notification_fn
+     * @flags CREATE_AND_SET
+     * @default NULL
+     */
+    SAI_SWITCH_ATTR_OTN_ALARM_EVENT_NOTIFY,
+
     SAI_SWITCH_ATTR_EXTENSIONS_RANGE_END
 
 } sai_switch_attr_extensions_t;
